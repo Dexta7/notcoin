@@ -23,6 +23,7 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 10px;
+            position: relative;
         }
 
         h1 {
@@ -33,14 +34,32 @@
         .chart-container {
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>نمودار نات کوین دلیح</h1>
+        <h1>نمودار نات کوین</h1>
         <div class="chart-container">
-            <iframe src="https://www.tradingview.com/widgetembed/?hideideas=1&amp%3Boverrides=%7B%7D&amp%3Benabled_features=%5B%5D&amp%3Bdisabled_features=%5B%5D&amp%3Blocale=en#%7B%22symbol%22%3A%22NOTUSDT%22%2C%22frameElementId%22%3A%22tradingview_b9045%22%2C%22interval%22%3A%22D%22%2C%22hide_side_toolbar%22%3A%220%22%2C%22allow_symbol_change%22%3A%221%22%2C%22save_image%22%3A%221%22%2C%22studies%22%3A%22%5B%5D%22%2C%22theme%22%3A%22Light%22%2C%22style%22%3A%221%22%2C%22timezone%22%3A%22Etc%2FUTC%22%2C%22studies_overrides%22%3A%22%7B%7D%22%2C%22utm_source%22%3A%22coinmarketcap.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22chart%22%2C%22utm_term%22%3A%22NOTUSDT%22%2C%22page-uri%22%3A%22coinmarketcap.com%2Fcurrencies%2Fnotcoin%2F%22%7D" frameborder="0" width="100%" height="500"></iframe>
+            <iframe src="https://dexta7.github.io/notcoin/not.html"></iframe>
+            <div class="overlay"></div>
         </div>
     </div>
 </body>
